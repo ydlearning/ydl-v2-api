@@ -1,4 +1,4 @@
-import authentication.schema
+import ydl_auth.schema
 import graphql_jwt
 import graphene
 
@@ -10,7 +10,7 @@ class Mutation(graphene.ObjectType):
     refresh_token = graphql_jwt.Refresh.Field()
 
 class Query(
-    authentication.schema.Query,
+    ydl_auth.schema.Query,
     graphene.ObjectType
 ):
     debug = graphene.Field(DjangoDebug, name="_debug")
