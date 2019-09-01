@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 # base custom user class which will extends the existing user via one to one relation
 class YDL_User(models.Model):
@@ -26,6 +28,15 @@ class YDL_User(models.Model):
     
     def __str__(self):
         return self.user.username
+
+# create signals to use if a new django user is created. This event will be used to also create a
+# YDL_User Class Instance
+@receiver(post_save, sender=User)
+def create_user_ydl_user(sender, instance, created, **kwargs):
+    if created:
+        YDL_User.objects.create(user=instance)
+    else:
+        instance.ydl_user.save()
 
 # a student can have courses
 class YDL_Student(models.Model):
