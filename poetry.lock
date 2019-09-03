@@ -34,6 +34,14 @@ graphql-core = ">=2.1"
 
 [[package]]
 category = "main"
+description = "Web APIs for Django, made easy."
+name = "djangorestframework"
+optional = false
+python-versions = ">=3.5"
+version = "3.10.2"
+
+[[package]]
+category = "main"
 description = "GraphQL Framework for Python"
 name = "graphene"
 optional = false
@@ -151,13 +159,14 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.3.0"
 
 [metadata]
-content-hash = "cd8d25253239cf10fe3b1d2335532a30ba2388ed308c32a7c2e865f864f0734b"
+content-hash = "4b43f9ca45ed2767588419957bc374367504f0256b479b0b3507a3e08e22a0dd"
 python-versions = "^3.7"
 
 [metadata.hashes]
 aniso8601 = ["513d2b6637b7853806ae79ffaca6f3e8754bdd547048f5ccc1420aec4b714f1e", "d10a4bf949f619f719b227ef5386e31f49a2b6d453004b21f02661ccc8670c7b"]
 django = ["16a5d54411599780ac9dfe3b9b38f90f785c51259a584e0b24b6f14a7f69aae8", "9a2f98211ab474c710fcdad29c82f30fc14ce9917c7a70c3682162a624de4035"]
 django-graphql-jwt = ["688c1e6a69f9715471fc250521ca5675c71af3f1159a629089c20cb3db0e2ba7", "a189459086e97f2ff49203e9041f1f3d4b2a9502f02571d4e0087cc91b2cecd7"]
+djangorestframework = ["42979bd5441bb4d8fd69d0f385024a114c3cae7df0f110600b718751250f6929", "aedb48010ebfab9651aaab1df5fd3b4848eb4182afc909852a2110c24f89a359"]
 graphene = ["09165f03e1591b76bf57b133482db9be6dac72c74b0a628d3c93182af9c5a896", "2cbe6d4ef15cfc7b7805e0760a0e5b80747161ce1b0f990dfdc0d2cf497c12f9"]
 graphene-django = ["25f2bdf41e30bc7b860c1c13bfb4ba5c3961712394f16e847d79a69fc25a06b1", "d75b3e468d8d765d5964bc809e403b44bf7c37556c0464230a5083bccf14581b"]
 graphql-core = ["1488f2a5c2272dc9ba66e3042a6d1c30cea0db4c80bd1e911c6791ad6187d91b", "da64c472d720da4537a2e8de8ba859210b62841bd47a9be65ca35177f62fe0e4"]
