@@ -35,8 +35,8 @@ class YDL_User(models.Model):
 def create_user_ydl_user(sender, instance, created, **kwargs):
     if created:
         YDL_User.objects.create(user=instance)
-    else:
-        instance.ydl_user.save()
+#    else:
+#        instance.ydl_user.save()
 
 # a student can have courses
 class YDL_Student(models.Model):
