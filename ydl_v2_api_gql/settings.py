@@ -143,3 +143,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = config["DJANGO"]["STATIC_ROOT"]
+MEDIA_ROOT = config["DJANGO"]["MEDIA_ROOT"]
+MEDIA_URL = '/media/'
