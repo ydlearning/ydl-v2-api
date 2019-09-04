@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import configparser
+import json
 
 # Setup configparser
 config = configparser.ConfigParser()
@@ -30,7 +31,7 @@ SECRET_KEY = config["ENVIRONMENT"]["SECRET_KEY"]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config["DJANGO"].getboolean("DEBUG")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = json.loads(config["DJANGO"]["ALLOWED_HOSTS"])
 
 
 # Application definition
