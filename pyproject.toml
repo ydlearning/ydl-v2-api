@@ -10,7 +10,7 @@ django = "^2.2"
 graphene-django = "^2.5"
 django-graphql-jwt = "^0.2.2"
 djangorestframework = "^3.10"
-
+gunicorn = {version = "^19.9", platform = "linux"}
 [tool.poetry.dev-dependencies]
 
 [build-system]
