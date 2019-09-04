@@ -99,7 +99,6 @@ six = ">=1.12"
 [[package]]
 category = "main"
 description = "WSGI HTTP Server for UNIX"
-marker = "sys_platform == \"linux\""
 name = "gunicorn"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*"
@@ -168,7 +167,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.3.0"
 
 [metadata]
-content-hash = "09269d76af68c6ae3edf85918cb2cb63230a594b35478699fadcc2d60c7105d4"
+content-hash = "e13b9af2c5cd1347249fc001398198356c4f343bbfc8dce354dd0ccb694aeb04"
 python-versions = "^3.7"
 
 [metadata.hashes]
